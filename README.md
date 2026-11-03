@@ -1,7 +1,8 @@
-# Pegmatita de Poñen: sistema muscovítico con elementos raros
+# Pegmatita de Poñen
 
-Presentación académica en español, con citas y referencias bibliográficas.
+La presentación forma parte de la colección [Presentaciones](https://lucianoab10-web.github.io/presentaciones/).
 
-La versión completa se publica desde `docs/index.html`. La versión sin imágenes incorporadas está en `docs/index.lite.html`.
+- [Presentación completa](https://lucianoab10-web.github.io/presentaciones/pegmatita-ponen/)
+- [Versión lite](https://lucianoab10-web.github.io/presentaciones/pegmatita-ponen/index.lite.html)
 
-GitHub Pages publica automáticamente los cambios de la carpeta `docs` de la rama `main`. Los archivos conservan las dimensiones 1280 × 720, la navegación y los estilos de impresión.
+La dirección histórica de este repositorio redirige a la colección y conserva la diapositiva y los parámetros del enlace.
