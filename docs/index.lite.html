@@ -3,90 +3,91 @@
 <head>
 <meta name="deck-id" content="mvyd3xzxufu">
 <meta charset="UTF-8">
+<meta name="brand-profile" content="institucional-azul-unab">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pegmatita de Poñen: sistema muscovítico con elementos raros</title>
 <style>
-:root{
-  --primary:#2543A5;
-  --secondary:#64748B;
-  --accent:#D97706;
-  --bg-light:#F8FAFC;
-  --bg-dark:#15234B;
-  --text:#172033;
-  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
+
+:root{--primary:#002060;--secondary:#222A35;--accent:#002060;--bg-light:#FFFFFF;--bg-dark:#002060;--text:#404040;--font:Calibri,Arial,Helvetica,sans-serif;--frame:#BFBFBF;--divider:#D9D9D9}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg-dark);overflow:hidden;font-family:var(--font);color:var(--text)}
 .viewer{position:fixed;inset:0;background:var(--bg-dark)}
 .deck{position:absolute;left:0;top:0;width:1280px;height:720px;transform-origin:0 0}
-.slide{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:hidden;background:var(--bg-light);color:var(--text);opacity:0;visibility:hidden;transform:translateX(24px);transition:opacity .35s ease,transform .35s ease,visibility .35s}
+.slide{position:absolute;left:0;top:0;width:1280px;height:720px;overflow:hidden;background:#FFFFFF;color:var(--text);opacity:0;visibility:hidden;transform:translateX(24px);transition:opacity .35s ease,transform .35s ease,visibility .35s}
 .slide.active{opacity:1;visibility:visible;transform:none}
-.slide.dark{background:var(--bg-dark);color:#F8FAFC}
-.canvas{position:absolute;left:0;top:0;width:1280px;height:720px;padding:48px 64px 46px;display:flex;flex-direction:column}
-.kicker{font-size:16px;line-height:1.4;font-weight:500;color:var(--secondary);margin:0 0 9px}
-.title{font-size:32px;line-height:1.22;font-weight:600;color:var(--primary);margin:0 0 22px;letter-spacing:0}
-.dark .title{color:#F8FAFC}
-.dark .kicker,.dark .cite{color:#CBD5E1}
-.cite{font-size:17px;line-height:1.4;color:#43516A;font-weight:400;display:block;margin-top:8px}
-.inline-cite{font-size:17px;color:#43516A;font-weight:400;white-space:normal}
-.content{flex:1;min-height:0}
-p{font-size:23px;line-height:1.46;margin:0}
-strong{font-weight:600}
-h3{font-size:23px;font-weight:600;line-height:1.35;color:var(--primary);margin:0 0 12px}
-.intro{font-size:22px;line-height:1.45;margin:0 0 24px;max-width:1110px}
-.reading-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:28px;max-width:1080px}
-.reading-list li{font-size:24px;line-height:1.45;padding-left:22px;position:relative}
-.reading-list li::before{content:"";position:absolute;left:0;top:13px;width:5px;height:5px;background:var(--accent)}
-.reading-list .cite{margin-top:7px}
-.cover .canvas{padding:86px 88px 66px}
-.cover .title{font-size:38px;font-weight:500;margin:50px 0 18px}
-.cover .subtitle{font-size:27px;line-height:1.4;font-weight:400;max-width:860px;margin:0}
-.cover .location{font-size:23px;margin-top:auto;color:#E2E8F0}
-.cover .cite{color:#CBD5E1;margin-top:12px}
-.cover .kicker{font-size:18px;color:#CBD5E1}
-.term-list{display:flex;flex-direction:column;gap:27px;margin:6px 0 0}
-.term-row{display:grid;grid-template-columns:236px 1fr;gap:34px;padding-top:23px;border-top:1px solid #CBD5E1}
-.term-row dt{font-size:24px;font-weight:500;line-height:1.35;color:var(--primary)}
-.term-row dd{margin:0;font-size:23px;line-height:1.44}
-.figure-layout{display:grid;grid-template-columns:660px 1fr;gap:38px;flex:1;min-height:0;align-items:start}
+.canvas{position:absolute;left:0;top:0;width:1280px;height:720px;padding:0;font-family:var(--font)}
+.institutional-bg{position:absolute;inset:0;width:1280px;height:720px;object-fit:cover;z-index:0}
+.institutional-frame{position:absolute;left:31.71px;top:95.29px;width:1212.05px;height:598.31px;border:1.33px solid var(--frame);pointer-events:none;z-index:1}
+.logo-tab{position:absolute;left:1077.89px;top:-21.63px;width:140.64px;height:180.23px;background:var(--primary);z-index:4}
+.institutional-logo{position:absolute;left:1089.29px;top:41.37px;width:120.85px;height:102.19px;object-fit:contain;z-index:5}
+.title{position:absolute;left:222.12px;top:68.07px;width:804.76px;height:54.67px;margin:0;padding:4.8px 9.6px;display:flex;align-items:center;justify-content:center;background:var(--secondary);color:#FFFFFF;font:400 24px/1.15 "Calibri Light",Calibri,Arial,sans-serif;text-align:center;z-index:2}
+.content{position:absolute;left:112px;top:213px;width:1056px;z-index:2}
+p{font-size:21.33px;line-height:1.35;margin:0}
+strong{font-weight:700}
+h3{font:700 21.33px/1.25 Calibri,Arial,sans-serif;color:var(--primary);margin:0 0 14px}
+.cite{font:400 17px/1.3 Calibri,Arial,sans-serif;color:var(--text);display:block;margin-top:8px}
+.inline-cite{font:400 17px/1.3 Calibri,Arial,sans-serif;color:var(--text);white-space:normal}
+.intro{position:absolute;left:115px;top:181px;width:1048px;font-size:21.33px;line-height:1.35;z-index:2}
+.cover{background:var(--bg-dark)}
+.cover .institutional-logo{left:577.94px;top:114.07px;width:181.33px;height:153.33px}
+.cover .title{left:180.30px;top:303.90px;width:919.41px;height:77.87px;padding:4.8px 9.6px;align-items:flex-end;background:transparent;color:#FFFFFF;font:400 66.67px/1.08 Montserrat,Arial,sans-serif}
+.cover-rule{position:absolute;left:337.88px;top:386.12px;width:629.93px;height:4.8px;background:#FFFFFF;z-index:2}
+.cover .subtitle{position:absolute;left:365.92px;top:400.87px;width:694.29px;margin:0;padding:4.8px 9.6px;color:#FFFFFF;font:400 30.67px/1.2 Montserrat,Arial,sans-serif;z-index:2}
+.cover .location{position:absolute;left:375.52px;top:558px;width:684.69px;color:#FFFFFF;font:400 21.33px/1.3 Calibri,Arial,sans-serif;z-index:2}
+.cover .cite{color:#FFFFFF;margin-top:12px}
+.term-list{display:flex;flex-direction:column;gap:28px;margin:0}
+.term-row{display:grid;grid-template-columns:250px 1fr;gap:34px;padding:19px 0 0;border-top:1.33px solid var(--divider)}
+.term-row dt{font-size:21.33px;font-weight:700;line-height:1.3;color:var(--primary)}
+.term-row dd{margin:0;font-size:21.33px;line-height:1.35}
+.reading-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:29px}
+.reading-list li{font-size:21.33px;line-height:1.35;padding-left:24px;position:relative}
+.reading-list li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;background:var(--primary)}
+.side-photo-image{position:absolute;left:687.56px;top:-8.33px;width:602.48px;height:736.67px;object-fit:cover;z-index:0}
+.side-photo .reading-list{left:112.37px;top:210px;width:536.47px;gap:26px}
+.side-photo .reading-list li{padding-left:18px}
+.figure-layout{left:90px;top:201px;width:1100px;display:grid;grid-template-columns:660px 1fr;gap:38px;align-items:start}
 .figcard{margin:0;min-width:0}
 .figcard img{display:block;width:100%;object-fit:contain;object-position:center}
-.caption{font-size:17px;line-height:1.4;color:#43516A;margin:14px 0 0}
-.figure-text{display:flex;flex-direction:column;gap:23px;padding-top:2px}
-.figure-text p{font-size:22px;line-height:1.42}
-.figure-text .cite{font-size:17px;margin-top:7px}
-.figure-wide img{height:300px}
-.figure-square{grid-template-columns:486px 1fr;gap:48px}
-.figure-square img{height:420px}
-.figure-square .figure-text{gap:22px}
-.zonation-definition{grid-template-columns:690px 1fr;gap:38px}
-.zonation-definition .figcard img{height:470px}
+.caption{font:400 17px/1.3 Calibri,Arial,sans-serif;color:var(--text);margin:12px 0 0}
+.figure-text{display:flex;flex-direction:column;gap:24px;padding-top:2px}
+.figure-text p{font-size:21.33px;line-height:1.35}
+.figure-text .cite{margin-top:8px}
+.figure-wide img{height:310px}
+.figure-square{left:112px;top:183px;width:1056px;grid-template-columns:465px 1fr;gap:48px}
+.figure-square img{height:414px}
+.figure-square .figure-text{gap:24px;padding-top:13px}
+.zonation-definition{left:82px;top:184px;width:1116px;grid-template-columns:676px 1fr;gap:34px}
+.zonation-definition .figcard img{height:439px}
 .zonation-definition .caption{margin-top:10px}
-.zonation-definition .figure-text{gap:32px;padding-top:4px}
-.zonation-definition h3{font-size:23px;font-weight:500;margin-bottom:12px}
-.zonation-definition .figure-text p{font-size:22px;line-height:1.45}
-.data-table{width:100%;border-collapse:collapse;margin-top:12px;table-layout:fixed}
-.data-table th{text-align:left;font-size:18px;line-height:1.4;font-weight:500;color:#43516A;border-bottom:1px solid var(--secondary);padding:0 20px 14px 0}
-.data-table td{vertical-align:top;font-size:23px;line-height:1.45;border-bottom:1px solid #CBD5E1;padding:27px 24px 27px 0}
-.data-table .value{font-size:27px;font-weight:500;color:var(--primary);white-space:nowrap}
-.unit-note{font-size:19px;line-height:1.5;margin-top:25px;color:#43516A}
-.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:8px}
-.zone{border-top:2px solid var(--secondary);padding-top:18px}
-.zone p{font-size:22px;line-height:1.45}
-.zone .cite{font-size:17px;margin-top:18px}
-.zone h3{font-size:24px;margin-bottom:18px;font-weight:500}
-.zone-note{font-size:18px;line-height:1.4;color:#43516A;margin-top:24px}
-.classification{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:8px}
-.classification section{border-top:1px solid #CBD5E1;padding-top:24px}
-.classification p{font-size:23px;line-height:1.45;margin-top:22px}
-.classification h3{font-size:24px;font-weight:500}
-.classification .cite{margin-top:9px}
-.summary{max-width:1090px;gap:34px;margin-top:12px}
-.refs-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:44px;row-gap:14px;margin:0;padding:0;list-style:none;grid-auto-flow:column;grid-template-rows:repeat(4,auto)}
-.refs-grid li{font-size:17px;line-height:1.36;padding-left:23px;text-indent:-23px;overflow-wrap:anywhere}
+.zonation-definition .figure-text{gap:29px;padding-top:6px}
+.zonation-definition h3{font-size:21.33px;margin-bottom:12px}
+.data-table{width:100%;border-collapse:collapse;margin:0;table-layout:fixed}
+.data-table th{text-align:left;font-size:19px;line-height:1.3;font-weight:700;color:var(--primary);border-bottom:1.33px solid var(--frame);padding:0 20px 16px 0}
+.data-table td{vertical-align:top;font-size:21.33px;line-height:1.35;border-bottom:1.33px solid var(--divider);padding:27px 24px 27px 0}
+.data-table .value{font-size:24px;font-weight:400;color:var(--primary);white-space:nowrap}
+.unit-note{font-size:19px;line-height:1.3;margin-top:24px}
+.zones{left:115px;top:317px;width:1048px;display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin:0}
+.zone{padding:0 10px 0 0}
+.zone+.zone{border-left:4.8px solid var(--divider);padding-left:25px}
+.zone p{font-size:21.33px;line-height:1.35}
+.zone .cite{margin-top:16px}
+.zone h3{font-size:21.33px;margin-bottom:18px}
+.zone-note{position:absolute;left:115px;top:642px;width:1048px;font-size:17px;line-height:1.3;z-index:2}
+.classification{left:112px;top:232px;width:1056px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.classification section+section{border-left:4.8px solid var(--divider);padding-left:30px}
+.classification p{font-size:21.33px;line-height:1.35;margin-top:22px}
+.classification h3{font-size:21.33px}
+.summary{top:232px;gap:37px}
+.refs-grid{left:91px;top:179px;width:1098px;display:grid;grid-template-columns:1fr 1fr;column-gap:44px;row-gap:13px;margin:0;padding:0;list-style:none;grid-auto-flow:column;grid-template-rows:repeat(4,auto)}
+.refs-grid li{font-size:17px;line-height:1.28;padding-left:23px;text-indent:-23px;overflow-wrap:anywhere}
 .refs-grid em{font-style:italic}
-.refs-grid a{font-size:16px;line-height:1.4;color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.refs-grid a{font-size:16px;line-height:1.3;color:var(--primary);text-decoration:underline;text-underline-offset:3px}
 .refs-grid .ref-link{display:block;margin-top:5px;padding-left:0;text-indent:0}
+.field-gallery{left:77.66px;top:186px;width:1124.68px;display:grid;grid-template-columns:285px 285px 506.68px;gap:24px}
+.field-gallery figure{margin:0;min-width:0}
+.field-gallery img{display:block;width:100%;height:380px;object-fit:contain;object-position:center}
+.field-gallery figcaption{margin-top:13px;font-size:18px;line-height:1.3;color:var(--text)}
+.photo-source{position:absolute;left:88px;top:632px;width:1104px;font:400 17px/1.3 Calibri,Arial,sans-serif;color:var(--text);z-index:2}
 .notes{display:none}
 #progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--accent);z-index:20;transition:width .35s ease}
 #counter{position:fixed;right:18px;bottom:12px;z-index:20;font-size:14px;font-weight:400;color:#E2E8F0;background:var(--bg-dark);padding:4px 10px;border-radius:3px;font-variant-numeric:tabular-nums}
@@ -115,14 +116,17 @@ body.overview #notes{display:none!important}
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
 }
 </style>
+<script type="application/json" id="deck-image-manifest">{"IMG_1":{"path":"compartidos/second-brain/imagenes/Pasted image 20261101174838.png","kind":"figure","sha256":"d2b601c77fb8236475a8818d346967cd19a9dbce73ce2a3126d0d8426d9a23f1"},"IMG_3":{"path":"Presentaciones/activos/zonacion-ponen-alarcon-2019.png","kind":"figure","sha256":"bc4b51fa7fd77468042e847d5727a0b5210f1b6abc1df26066f7ba601f35f22e"},"IMG_2":{"path":"compartidos/second-brain/imagenes/Pasted image 20261101174829.png","kind":"figure","sha256":"9e3d2e661fdbe43e46bca88052c6a2b0862142aa808e2472c4b6761fe5209e87"},"IMG_4":{"path":"Brand/Institucional-azul/activos/logo-unab-blanco.png","kind":"brand","sha256":"7cdf1952606f326df225219dc05dd1b4449a5b1f9102bf726bc0e694a1009c76"},"IMG_5":{"path":"Brand/Institucional-azul/activos/fondo-collage-unab.png","kind":"brand","sha256":"4bfc4e87b14d179f3453b85dc12bffcfb405fa14ba66da41bcd5ab47ece07814"},"IMG_6":{"path":"Brand/Institucional-azul/activos/foto-lateral-unab.png","kind":"brand","sha256":"b7bc0a09dcaca605c86a2388c49f328430aa90c39ed4ab996f96ecbd082a3394"},"IMG_7":{"path":"compartidos/second-brain/imagenes/IMG_0523.jpg","kind":"field-photo","sha256":"3d6a5fe9de037154b24d93aaa292af6a393ef782a2a98c03fd086e19f6240051"},"IMG_8":{"path":"compartidos/second-brain/imagenes/IMG_0522.jpg","kind":"field-photo","sha256":"90087dca953c970e0b2aba27ecd74bd19d974797e78c6c295abba48718a87dcc"},"IMG_9":{"path":"compartidos/second-brain/imagenes/IMG_0517.jpg","kind":"field-photo","sha256":"df205ecda1a464f478942a9fac6b35c698b845ca5a3a4ff958dfbc90ced6ed66"}}</script>
 </head>
 <body>
 <div class="viewer" id="viewer">
   <main class="deck" id="deck">
-    <section class="slide dark cover active" id="s1" aria-label="Pegmatita de Poñen">
+    <section class="slide cover active" id="s1" aria-label="Pegmatita de Poñen">
       <div class="canvas">
-        <p class="kicker">Geología · Presentación introductoria</p>
+        <img class="institutional-bg" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_5%22%20viewBox%3D%220%200%201920%201080%22%20width%3D%221920%22%20height%3D%221080%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2290.0%22%3EIMG_5%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2240.0%22%3Efondo-collage-unab.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Collage institucional de la Universidad Andrés Bello">
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h1 class="title">Pegmatita de Poñen</h1>
+        <div class="cover-rule" aria-hidden="true"></div>
         
         <p class="subtitle">Sistema muscovítico con elementos raros<span class="cite">(Crisóstomo Toledo, 2017, p. 3)</span></p>
         <p class="location">Región del Biobío, Chile<span class="cite">(Crisóstomo Toledo, 2017, p. 3)</span></p>
@@ -132,7 +136,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s2" aria-label="Concepto de pegmatita">
       <div class="canvas">
-        <p class="kicker">Fundamentos</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Concepto de pegmatita</h2>
         
         <dl class="term-list content">
@@ -144,9 +150,12 @@ body.overview #notes{display:none!important}
       <aside class="notes">Frost y Frost (2014, p. 154) describen pegmatitas de grano grueso y composición habitualmente granítica. La presencia de minerales poco comunes corresponde solo a una fracción de ellas.</aside>
     </section>
 
-    <section class="slide " id="s3" aria-label="Ubicación y roca hospedante">
+    <section class="slide side-photo" id="s3" aria-label="Ubicación y roca hospedante">
       <div class="canvas">
-        <p class="kicker">Contexto geológico</p>
+        <img class="side-photo-image" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_6%22%20viewBox%3D%220%200%201205%201474%22%20width%3D%221205%22%20height%3D%221474%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22100.4%22%3EIMG_6%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2244.6%22%3Efoto-lateral-unab.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Fotografía institucional de la Universidad Andrés Bello">
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Ubicación y roca hospedante</h2>
         
         <ul class="reading-list content">
@@ -160,7 +169,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s4" aria-label="Placeres auríferos en el contexto regional">
       <div class="canvas">
-        <p class="kicker">Contexto geológico</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Placeres auríferos en el contexto regional</h2>
         
         <div class="figure-layout figure-wide content">
@@ -179,7 +190,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s5" aria-label="Edad y concentración de uranio">
       <div class="canvas">
-        <p class="kicker">Datos publicados</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Edad y concentración de uranio</h2>
         
         <div class="content">
@@ -199,7 +212,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s6" aria-label="Concepto de zonación">
       <div class="canvas">
-        <p class="kicker">Fundamentos aplicados</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Concepto de zonación</h2>
         
         <div class="figure-layout zonation-definition content">
@@ -218,7 +233,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s7" aria-label="Zonación interna de Poñen">
       <div class="canvas">
-        <p class="kicker">Modelo propuesto</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Zonación interna de Poñen</h2>
         
         <p class="intro">La zonación es la variación de minerales y texturas dentro del cuerpo. El modelo propone una cristalización desde los márgenes hacia el centro.<span class="cite">(Velásquez, 2012, como se citó en Crisóstomo Toledo, 2017, p. 3)</span></p>
@@ -234,7 +251,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s8" aria-label="Modelo regional de emplazamiento">
       <div class="canvas">
-        <p class="kicker">Modelo propuesto</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Modelo regional de emplazamiento</h2>
         
         <div class="figure-layout figure-square content">
@@ -254,7 +273,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s9" aria-label="Clase muscovita–elementos raros">
       <div class="canvas">
-        <p class="kicker">Clasificación</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Clase muscovita–elementos raros</h2>
         
         <div class="classification content">
@@ -273,7 +294,9 @@ body.overview #notes{display:none!important}
 
     <section class="slide " id="s10" aria-label="Concentración y minerales portadores">
       <div class="canvas">
-        <p class="kicker">Fundamentos aplicados</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Concentración y minerales portadores</h2>
         
         <dl class="term-list content">
@@ -285,22 +308,43 @@ body.overview #notes{display:none!important}
       <aside class="notes">El líquido restante puede enriquecerse en elementos poco incorporados por los minerales que cristalizan primero (Frost &amp; Frost, 2014, pp. 57, 154). La distribución también depende de las fases minerales presentes (Crisóstomo Toledo, 2017, p. 4). Alarcón Novoa (2019, pp. 71, 74–75) caracteriza monacita y xenotima en Poñen.</aside>
     </section>
 
-    <section class="slide " id="s11" aria-label="Síntesis del caso de estudio">
+    <section class="slide field-samples" id="s11" aria-label="Muestras de campo">
       <div class="canvas">
-        <p class="kicker">Síntesis</p>
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
+        <h2 class="title">Muestras de campo</h2>
+        <div class="field-gallery content">
+          <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_7%22%20viewBox%3D%220%200%203024%204032%22%20width%3D%223024%22%20height%3D%224032%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22252.0%22%3EIMG_7%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22112.0%22%3EIMG_0523.jpg%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Fotografía de muestra de campo, archivo IMG_0523.jpg"><figcaption>IMG_0523.jpg</figcaption></figure>
+          <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_8%22%20viewBox%3D%220%200%203024%204032%22%20width%3D%223024%22%20height%3D%224032%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22252.0%22%3EIMG_8%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22112.0%22%3EIMG_0522.jpg%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Fotografía de muestra de campo, archivo IMG_0522.jpg"><figcaption>IMG_0522.jpg</figcaption></figure>
+          <figure><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_9%22%20viewBox%3D%220%200%204032%203024%22%20width%3D%224032%22%20height%3D%223024%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22252.0%22%3EIMG_9%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%22112.0%22%3EIMG_0517.jpg%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Fotografía de muestra de campo, archivo IMG_0517.jpg"><figcaption>IMG_0517.jpg</figcaption></figure>
+        </div>
+        <p class="photo-source">Fotografías proporcionadas por el usuario. Autoría y fecha no consignadas.</p>
+      </div>
+      <aside class="notes">Registro fotográfico de muestras de campo proporcionado por el usuario: IMG_0523.jpg, IMG_0522.jpg e IMG_0517.jpg. Autoría y fecha no consignadas.</aside>
+    </section>
+
+    <section class="slide " id="s12" aria-label="Síntesis del caso de estudio">
+      <div class="canvas">
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         <h2 class="title">Síntesis del caso de estudio</h2>
         
         <ul class="reading-list summary content">
           <li>Poñen es una pegmatita zonada, clasificada como muscovita–elementos raros.<span class="cite">(Crisóstomo Toledo, 2017, p. 3)</span></li>
           <li>La edad de cristalización publicada mediante U–Pb en circón es de 310,8 ± 1,8 Ma.<span class="cite">(Collao et al., 2019, p. 636)</span></li>
-          <li>Los estudios mineralógicos identifican fases portadoras de uranio, torio y tierras raras en Poñen.<span class="cite">(Alarcón Novoa, 2019, p. 91)</span></li>
+          <li>Los estudios mineralógicos identifican fases portadoras de uranio, torio y tierras raras en Poñen.<span class="cite">(Alarcón Novoa, 2019, pp. 71–75)</span></li>
         </ul>
       </div>
-      <aside class="notes">La síntesis reúne la clasificación y zonación descritas por Crisóstomo Toledo (2017, p. 3), la edad reportada por Collao et al. (2019, p. 636) y la caracterización mineralógica de Alarcón Novoa (2019, p. 91).</aside>
+      <aside class="notes">La síntesis reúne la clasificación y zonación descritas por Crisóstomo Toledo (2017, p. 3), la edad reportada por Collao et al. (2019, p. 636) y la caracterización mineralógica de Alarcón Novoa (2019, pp. 71–75).</aside>
     </section>
 
-    <section class="slide " id="s12" aria-label="Referencias bibliográficas">
+    <section class="slide " id="s13" aria-label="Referencias bibliográficas">
       <div class="canvas">
+        <div class="institutional-frame" aria-hidden="true"></div>
+        <div class="logo-tab" aria-hidden="true"></div>
+        <img class="institutional-logo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-deck-ph%3D%22IMG_4%22%20viewBox%3D%220%200%20725%20614%22%20width%3D%22725%22%20height%3D%22614%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23F3F4F6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2245%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2251.2%22%3EIMG_4%3C%2Ftext%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2258%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23404040%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222.7%22%3Elogo-unab-blanco.png%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Universidad Andrés Bello">
         
         <h2 class="title">Referencias bibliográficas</h2>
         
@@ -319,7 +363,7 @@ body.overview #notes{display:none!important}
   </main>
 </div>
 <div id="progress"></div>
-<div id="counter" aria-live="polite">1 / 12</div>
+<div id="counter" aria-live="polite">1 / 13</div>
 <div id="notes" role="region" aria-label="Notas del orador"><div class="lbl">Notas del orador</div><div id="notesText"></div></div>
 <script>
 (function(){
